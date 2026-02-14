@@ -134,6 +134,7 @@ section {
     background-image: linear-gradient( var(--main-color), var(--main-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
+    background-clip: text;
     background-position: -33rem 0;  
     /*animation: homeBgText 6s linear infinite;
     animation-delay: 2s;*/
@@ -382,7 +383,7 @@ span{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: auto;
+    min-height: fit-content;
     padding-bottom: 5rem;
 }
 
@@ -469,7 +470,7 @@ span{
 
 /*skills section*/
 .skills {
-    min-height: auto;
+    min-height: fit-content;
     padding-bottom: 7rem;
     background: var(--second-bg-color);
 }
@@ -592,7 +593,7 @@ span{
 
 /*section contact design*/
 .contact {
-    min-height: auto;
+    min-height: fit-content;
     padding-bottom: 7rem;
 }
 
@@ -983,6 +984,17 @@ section:nth-child(odd) .animate.animate.scroll,
         width: 0;
     }
 }
+
+/* CSS Custom Property Variables for Animation Delays */
+.animate-i-1 { --i: 1; }
+.animate-i-2 { --i: 2; }
+.animate-i-3 { --i: 3; }
+.animate-i-4 { --i: 4; }
+.animate-i-5 { --i: 5; }
+.animate-i-6 { --i: 6; }
+.animate-i-7 { --i: 7; }
+.animate-i-8 { --i: 8; }
+.animate-i-9 { --i: 9; }
 
 
 

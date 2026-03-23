@@ -13,19 +13,19 @@ const translations = {
         trHomeLetsTalkbtn: "Let's Talk",
         trHomespan: "Farid Bouda",
         /**About section **/
-        trAbouth2: "About",
-        trAboutspanMe: "Me",
+        trAbouth2: "About <span>Me</span>",
+        //trAboutspanMe: "Me",
         trAbouth3: "Software Engineer!",
         trAboutp: "Experienced Software Developer with more than 4 years of experience in programming, software and data management based on specific requirements. Adaptable, diligent and bilingual(English and French)",
         trAboutReadMe: "Github profile",
         /**Education section **/
-        trJourneyh2: "My",
-        trSpanJourney: "journey",
+        trJourneyh2: "My <span>journey</span>",
+        //trSpanJourney: "journey",
         treducation: "Education",
         treducationXP: "Experience",
         trEducationh3: "Bachelor degree - Ottawa university",
         trEducationh3_1: "Certifications",
-        trEducationp1: "Graduated from Ottawa university with a major program in software engineering and a minor program in marketing and entrepreneurship.",
+        trEducationp1: `Graduated from Ottawa university with a major program in software engineering and a minor program in marketing and entrepreneurship.`,
         trEducationp1_1: "Python, SQL",
         /**Experience section**/
         trExph3: "Software developer",
@@ -34,18 +34,18 @@ const translations = {
         trExp1_1: "Developer",
         trExpp2: "4 months internship as a data analyst at Ottawa University (01/2021 – 04/2021)",
         /**Coding Skills Section **/
-        trCodingSkillh2My: "My",
-        trCodingSkillh2: "Skills",
+        trCodingSkillh2My: "My <span>skills</span>",
+        //trCodingSkillh2: "Skills",
         trCodingSkillh3: "Coding Skills",
         /**Experience Skills Section **/
-        trExpSkill: "Experience skills",
-        trExpSkill1: "Data extraction",
-        trExpSkill2: "Data cleaning(ETL process)",
-        trExpSkill3: "Data visualization",
-        trExpSkill4: "Workflow and Database management",
+        trExpSkill: "Experience",
+        trExpSkill1: "Data extraction<span>93%</span>",
+        trExpSkill2: "Data cleaning(ETL process)<span>86%</span>",
+        trExpSkill3: "Data visualization<span>95%</span>",
+        trExpSkill4: "Workflow and Database management <span>81%</span>",
         /**Contact Section **/
-        trContacth2: "Contact",
-        trContacth2Me: "Me",
+        trContacth2: "Contact <span>Me!</span>",
+        //trContacth2Me: "Me",
         trContactFullName: "Full Name",
         trContactEmail: "Email address",
         trContactMobile: "Mobile number",
@@ -53,7 +53,7 @@ const translations = {
         trContactMessage: "Your Message",
         trContactSubmitbtn: "Submit",
         /**Footer Section **/
-        trFooterCopyright: "Copyright &copy; 2025 by Farid Bouda | All right reserved.",
+        trFooterCopyright: "&copy;2026. All rights reserved. Created by Farid Bouda",
 
 
     },
@@ -71,14 +71,14 @@ const translations = {
         trHomeHireMebtn: "Mon CV",
         trHomeLetsTalkbtn: "Discutons",
         /**About section **/
-        trAbouth2: "À propos de",
-        trAboutspanMe: "Moi",
+        trAbouth2: "À propos de <span>Moi</span>",
+        //trAboutspanMe: "Moi",
         trAbouth3: "Ingénieur en logiciel!",
         trAboutp: "Développeur logiciel expérimenté avec plus de 4 ans d'expérience en programmation, gestion de logiciels et de données basées sur des exigences spécifiques. Adaptable, assidu et bilingue(anglais et français)",
         trAboutReadMe: "Profil github ",
         /**Education Section **/
-        trJourneyh2: "Mon",
-        trSpanJourney: "parcours",
+        trJourneyh2: "Mon <span>parcours</span>",
+        //trSpanJourney: "parcours",
         treducation: "Éducation",
         treducationXP: "Expérience",
         trEducationh3: "Ingénieur logiciel",
@@ -91,18 +91,18 @@ const translations = {
         trExph3_1: "Analyst de données",
         trExpp2: "Experience de plusieurs mois en tant qu'analyste de données à l'Université d'Ottawa (01/2021 – 04/2021)",
         /**Coding Skills Section **/
-        trCodingSkillh2My: "Mes",
-        trCodingSkillh2: "compétences",
-        trCodingSkillh3: "Compétences en codage",
+        trCodingSkillh2My: "Mes <span>compétences</span>",
+        //trCodingSkillh2: "compétences",
+        trCodingSkillh3: "Programmation",
         /**Experience Skills Section **/
         trExpSkill: "Expérience",
-        trExpSkill1: "Extraction de données",
-        trExpSkill2: "Transformation de données(ETL)",
-        trExpSkill3: "Visualisation de données",
-        trExpSkill4: "Gestion de flux de travail et de base de données",
+        trExpSkill1: "Extraction de données<span>93%</span>",
+        trExpSkill2: "Transformation de données(ETL)<span>86%</span>",
+        trExpSkill3: "Visualisation de données<span>95%</span>",
+        trExpSkill4: "Gestion de flux de travail et de base de données<span>81%</span>",
         /**Contact Section **/
-        trContacth2: "Contactez",
-        trContacth2Me: "Moi",
+        trContacth2: "Contactez <span>Moi!</span>",
+        //trContacth2Me: "Moi",
         trContactFullName: "Nom complet",
         trContactEmail: "Adresse mail",
         trContactMobile: "Numéro de téléphone",
@@ -110,7 +110,7 @@ const translations = {
         trContactMessage: "Votre Message",
         trContactSubmitbtn: "Envoyer",
         /**Footer Section **/
-        trFooterCopyright: "Droits d'auteur &copy; 2025 par Farid Bouda | Tous droits réservés.",
+        trFooterCopyright: "&copy;2026. Tous droits réservés. Réalisé par Farid Bouda.",
     }
 }
 
@@ -120,7 +120,7 @@ function setLanguage(lang) {
     /* Translate text content */
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.dataset.i18n
-        element.textContent = translations[lang][key]
+        element.innerHTML = translations[lang][key]
     })
 
     /* Translate placeholders */

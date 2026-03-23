@@ -567,7 +567,7 @@ span{
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
-    width: 89%;
+    width: 87%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
@@ -996,5 +996,17 @@ section:nth-child(odd) .animate.animate.scroll,
 .animate-i-8 { --i: 8; }
 .animate-i-9 { --i: 9; }
 
-
-
+/* Additional styles for certifications link */
+.certification-link {
+  display: inline-block;
+  padding: 4px 6px;
+  background-color: #00abf0;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+/* .certification-link:hover {
+  background-color: #112e42 ;
+  color: #00abf0 
+  #45a049
+  }*/

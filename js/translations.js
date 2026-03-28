@@ -7,8 +7,11 @@ const translations = {
         treducation: "Education",
         trContact: "Contact",
         trHomeh1: "Hi I am Farid",
-        trHomeh3: "Software Engineer",
-        trHomep1: "Experienced Software Developer with more than 4 years of experience in programming, software and data management based on specific requirements. Adaptable, diligent and bilingual(English and French)",
+        trHomeh3: "Data Engineer",
+        trHomep1: `I am a bilingual software Engineer specializing in Data Engineering with experience working with structured 
+                    and unstructured data, transforming raw information into reliable, high-quality datasets that support 
+                    analytics and business decision-making. Skilled in ETL processes, data modelling, and database management 
+                    I am passionate about solving complex data challenges.`,
         trHomeHireMebtn: "Resume",
         trHomeLetsTalkbtn: "Let's Talk",
         trHomespan: "Farid Bouda",
@@ -16,26 +19,29 @@ const translations = {
         trAbouth2: "About <span>Me</span>",
         //trAboutspanMe: "Me",
         trAbouth3: "Software Engineer!",
-        trAboutp: "Experienced Software Developer with more than 4 years of experience in programming, software and data management based on specific requirements. Adaptable, diligent and bilingual(English and French)",
+        trAboutp: `Realization of multiple software projects and applications, including data engineering projects involving 
+                    the design and implementation of scalable data pipelines to collect, process, and transform large 
+                    volumes of structured and unstructured data`,
         trAboutReadMe: "Github profile",
         /**Education section **/
         trJourneyh2: "My <span>journey</span>",
-        //trSpanJourney: "journey",
         treducation: "Education",
         treducationXP: "Experience",
         trEducationh3: "Bachelor degree - Ottawa university",
         trEducationh3_1: "Certifications",
-        trEducationp1: `Graduated from Ottawa university with a major program in software engineering and a minor program in marketing and entrepreneurship.`,
+        trEducationp1: `Graduated from Ottawa university with a major program in software engineering and a minor program 
+                        in marketing and entrepreneurship.`,
         trEducationp1_1: "Python, SQL",
         /**Experience section**/
         trExph3: "Software developer",
         trExph3_1: "Data Analyst",
-        trExpp1: "Analytical and results-oriented professional with 3+ years of experience in software and data systems development within the Government of Canada",
+        trExpp1: `Improved operational efficiency by automating processes, building secure data dashboards, and delivering 
+                    reliable technical solutions.`,
         trExp1_1: "Developer",
-        trExpp2: "4 months internship as a data analyst at Ottawa University (01/2021 – 04/2021)",
+        trExpp2: `Enhanced financial analytics through advanced data modelling (DAX) and interactive dashboards to support strategic 
+                    decision-making.`,
         /**Coding Skills Section **/
         trCodingSkillh2My: "My <span>skills</span>",
-        //trCodingSkillh2: "Skills",
         trCodingSkillh3: "Coding Skills",
         /**Experience Skills Section **/
         trExpSkill: "Experience",
@@ -45,7 +51,6 @@ const translations = {
         trExpSkill4: "Workflow and Database management <span>81%</span>",
         /**Contact Section **/
         trContacth2: "Contact <span>Me!</span>",
-        //trContacth2Me: "Me",
         trContactFullName: "Full Name",
         trContactEmail: "Email address",
         trContactMobile: "Mobile number",
@@ -53,7 +58,7 @@ const translations = {
         trContactMessage: "Your Message",
         trContactSubmitbtn: "Submit",
         /**Footer Section **/
-        trFooterCopyright: "&copy;2026. All rights reserved. Created by Farid Bouda",
+        trFooterCopyright: "&copy;2026. All rights reserved. Created by Farid Bouda.",
 
 
     },
@@ -66,19 +71,17 @@ const translations = {
         treducation: "Éducation",
         trContact: "Nous joindre",
         trHomeh1: "Salut je suis Farid",
-        trHomeh3: "Ingénieur en logiciel",
-        trHomep1: "Développeur logiciel expérimenté avec plus de 4 ans d'expérience en programmation,conception et gestion de logicielle et de données selon des exigences spécifiques. Adaptable, assidu et bilingue (anglais et français)",
+        trHomeh3: "Ingénieur de données",
+        trHomep1: "Je suis un ingénieur logiciel bilingue spécialisé en ingénierie des données, avec de l’expérience dans la gestion de données structurées et non structurées, transformant des informations brutes en ensembles de données fiables et de haute qualité, destinés à soutenir l’analyse et la prise de décision. Compétent dans les processus ETL, la modélisation des données et la gestion de bases de données, je suis passionné par la résolution de défis complexes liés aux données.",
         trHomeHireMebtn: "Mon CV",
         trHomeLetsTalkbtn: "Discutons",
         /**About section **/
         trAbouth2: "À propos de <span>Moi</span>",
-        //trAboutspanMe: "Moi",
-        trAbouth3: "Ingénieur en logiciel!",
-        trAboutp: "Développeur logiciel expérimenté avec plus de 4 ans d'expérience en programmation, gestion de logiciels et de données basées sur des exigences spécifiques. Adaptable, assidu et bilingue(anglais et français)",
+        trAbouth3: "Ingénieur de données!",
+        trAboutp: "Réalisation de plusieurs projets et applications logiciels, y compris des projets en ingénierie des données impliquant la conception et la mise en œuvre de pipelines de données évolutifs pour collecter, traiter et transformer de grands volumes de données structurées et non structurées.",
         trAboutReadMe: "Profil github ",
         /**Education Section **/
         trJourneyh2: "Mon <span>parcours</span>",
-        //trSpanJourney: "parcours",
         treducation: "Éducation",
         treducationXP: "Expérience",
         trEducationh3: "Ingénieur logiciel",
@@ -87,12 +90,11 @@ const translations = {
         trEducationp1_1: "Python, SQL",
         /**Experience Section **/
         trExph3: "Développeur",
-        trExpp1: "3 ans d'expérience en tant que développeur de logiciels au Service partagés Canada (10/2021 – 05/2024).",
+        trExpp1: "Amélioration de l'efficacité opérationnelle d'automatisation des tableaux de données sécurisés et en fournissant des solutions techniques fiables.",
         trExph3_1: "Analyst de données",
-        trExpp2: "Experience de plusieurs mois en tant qu'analyste de données à l'Université d'Ottawa (01/2021 – 04/2021)",
+        trExpp2: `Analyse financière améliorée utilisant une modélisation de données avancée et des tableaux interactifs pour la prise de décision stratégique.`,
         /**Coding Skills Section **/
         trCodingSkillh2My: "Mes <span>compétences</span>",
-        //trCodingSkillh2: "compétences",
         trCodingSkillh3: "Programmation",
         /**Experience Skills Section **/
         trExpSkill: "Expérience",
@@ -102,7 +104,6 @@ const translations = {
         trExpSkill4: "Gestion de flux de travail et de base de données<span>81%</span>",
         /**Contact Section **/
         trContacth2: "Contactez <span>Moi!</span>",
-        //trContacth2Me: "Moi",
         trContactFullName: "Nom complet",
         trContactEmail: "Adresse mail",
         trContactMobile: "Numéro de téléphone",

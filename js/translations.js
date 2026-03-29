@@ -18,7 +18,7 @@ const translations = {
         /**About section **/
         trAbouth2: "About <span>Me</span>",
         //trAboutspanMe: "Me",
-        trAbouth3: "Software Engineer!",
+        trAbouth3: "Data Engineer!",
         trAboutp: `Realization of multiple software projects and applications, including data engineering projects involving 
                     the design and implementation of scalable data pipelines to collect, process, and transform large 
                     volumes of structured and unstructured data`,

@@ -922,6 +922,14 @@ section:nth-child(odd) .animate.animate.scroll,
         margin-top: 2rem;
         text-align: center;
     }
+
+    .home-imgHover {
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: 1;
+    }
+
+    
 }
 
 @media(max-width: 371px){

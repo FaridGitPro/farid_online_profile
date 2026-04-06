@@ -922,6 +922,12 @@ section:nth-child(odd) .animate.animate.scroll,
         margin-top: 2rem;
         text-align: center;
     }
+
+    .home-imgHover {
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: 1;
+    }
     
 }
 
@@ -938,6 +944,7 @@ section:nth-child(odd) .animate.animate.scroll,
     .home-content h1 {
         font-size: 5rem;
     }
+
 }
 
 /*KEYFRAMES ANIMATION*/
@@ -1006,8 +1013,4 @@ section:nth-child(odd) .animate.animate.scroll,
   text-decoration: none;
   border-radius: 5px;
 }
-/* .certification-link:hover {
-  background-color: #112e42 ;
-  color: #00abf0 
-  #45a049
-  }*/
+

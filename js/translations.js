@@ -45,10 +45,10 @@ const translations = {
         trCodingSkillh3: "Coding Skills",
         /**Experience Skills Section **/
         trExpSkill: "Experience",
-        trExpSkill1: "Data extraction<span>93%</span>",
-        trExpSkill2: "Data cleaning(ETL process)<span>86%</span>",
-        trExpSkill3: "Data visualization<span>95%</span>",
-        trExpSkill4: "Workflow and Database management <span>81%</span>",
+        trExpSkill1: "Data extraction<span>97%</span>",
+        trExpSkill2: "Data cleaning(ETL process)<span>89%</span>",
+        trExpSkill3: "Data visualization<span>94%</span>",
+        trExpSkill4: "Workflow and Database management <span>87%</span>",
         /**Contact Section **/
         trContacth2: "Contact <span>Me!</span>",
         trContactFullName: "Full Name",

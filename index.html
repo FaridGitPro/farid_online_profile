@@ -2,17 +2,28 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8X1VX0W8QT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8X1VX0W8QT');
+    </script>
+    
     <!-- Basic -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO -->
     <title>Farid Bouda | Data Engineer & Data Analyst Portfolio </title>
-    <meta name="description" content="Portfolio of Farid Bouda - Data Engineer and Data Analyst, SQL, Python, Power BI dashboards and projects.">
+    <meta name="description"
+        content="Portfolio of Farid Bouda - Data Engineer and Data Analyst, SQL, Python, Power BI dashboards and projects.">
     <meta name="keywords" content="Farid Bouda, Data Engineer, Data Analyst, SQL, Python, Power BI, Portfolio, Data, Dashboards, 
                 Projects, Data visualization, Data management, Data analysis, Data engineering, Data science">
     <meta name="author" content="Farid Bouda">
     <!-- Open Graph (for LinkedIn, Facebook, etc.) -->
-    
+
     <!-- Favicon -->
     <link rel="icon" href="images/favicon_BF.png" type="image/png">
     <!-- Performance -->
@@ -21,6 +32,15 @@
     <link rel="stylesheet" href="css/style.css">
     <!--Box icon-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "pmATlYzTD0VQe_GJ3",
+            });
+        })();
+    </script>
 
 </head>
 
@@ -61,7 +81,8 @@
                 <span class="animate animate-i-4"></span>
             </p>
             <div class="btn-box">
-                <a href="document/Farid_Bouda_CV_EN.pdf" target="_blank" class="btn" data-i18n="trHomeHireMebtn">Hire me</a>
+                <a href="document/Farid_Bouda_CV_EN.pdf" target="_blank" class="btn" data-i18n="trHomeHireMebtn">Hire
+                    me</a>
                 <a href="#contact" class="btn" data-i18n="trHomeLetsTalkbtn">Let's talk</a>
                 <span class="animate animate-i-5"></span>
             </div>
@@ -262,45 +283,42 @@
         <form action="#">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required data-i18n-placeholder="trContactFullName">
+                    <input type="text" placeholder="Full Name" id="name" required
+                        data-i18n-placeholder="trContactFullName">
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email" required data-i18n-placeholder="trContactEmail">
+                    <input type="text" placeholder="Email" id="email" required data-i18n-placeholder="trContactEmail">
                     <span class="focus"></span>
                 </div>
-
                 <span class="animate scroll animate-i-3"></span>
-
             </div>
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required data-i18n-placeholder="trContactMobile">
+                    <input type="number" placeholder="Mobile Number" id="number" required
+                        data-i18n-placeholder="trContactMobile">
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required data-i18n-placeholder="trContactSubject">
+                    <input type="text" placeholder="Email Subject" id="subject"
+                        data-i18n-placeholder="trContactSubject">
                     <span class="focus"></span>
                 </div>
 
                 <span class="animate scroll animate-i-5"></span>
-
             </div>
 
             <div class="textarea-field">
-                <textarea name="" cols="30" rows="10" placeholder="Your Message" required
+                <textarea name="" cols="30" rows="10" placeholder="Your Message" id="message" required
                     data-i18n-placeholder="trContactMessage"></textarea>
                 <span class="focus"></span>
-
                 <span class="animate scroll animate-i-7"></span>
             </div>
 
             <div class="btn-box btns">
-                <button type="submit" class="btn" data-i18n="trContactSubmitbtn">Submit</button>
-
+                <button type="submit" class="btn" data-i18n="trContactSubmitbtn" onclick="sendEmail()">Submit</button>
                 <span class="animate scroll animate-i-9"></span>
-
             </div>
         </form>
     </section>
@@ -319,6 +337,8 @@
 
     <script src="js/script.js"></script>
     <script src="js/translations.js"></script>
+    <script src="js/email.js"></script>
+
 </body>
 
 </html>

@@ -7,6 +7,6 @@ function sendEmail(){
         subject : document.getElementById("subject").value
     }
 
-    emailjs.send("service_wm1bdy8","template_26xtk88",parms).then(alert("Message sent successfully!"), alert("Failed to send the message, please try again later."))
-    
+    emailjs.send("service_wm1bdy8","template_26xtk88",parms).then(alert("Message sent successfully!"))
+
 }

@@ -12,14 +12,13 @@ function sendEmail(){
     emailjs
         .send(serviceID, templateID, parms)
         .then((response)=>{
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("number").value = "";
-            document.getElementById("message").value = "";
-            document.getElementById("subject").value = "";
+            document.getElementById("contact-form").reset();
             console.log(response);
             alert("Message sent successfully!");
         })
-        .catch((error) => console.log(error));
+        .catch((error) => {
+            console.log(error)
+            alert("Failed to send message. Try again later.");
+        });
 
 }

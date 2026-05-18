@@ -6,7 +6,20 @@ function sendEmail(){
         message : document.getElementById("message").value,
         subject : document.getElementById("subject").value
     }
+    const serviceID = "service_wm1bdy8";
+    const templateID = "template_26xtk88";
 
-    emailjs.send("service_wm1bdy8","template_26xtk88",parms).then(alert("Message sent successfully!"))
+    emailjs
+        .send(serviceID, templateID, parms)
+        .then((response)=>{
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("number").value = "";
+            document.getElementById("message").value = "";
+            document.getElementById("subject").value = "";
+            console.log(response);
+            alert("Message sent successfully!");
+        })
+        .catch((error) => console.log(error));
 
 }
